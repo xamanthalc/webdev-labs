@@ -13,7 +13,15 @@
     <main>
         <p>Search location: {{city}}</p>
         <p>Search term: {{search_term or 'None Specified'}}</p>
-        <p>Data: {{ restaurant }}</p>
+
+        <section>
+            <h2>{{ restaurant.get('name') }}</h2>
+            <div class = "img" style="background-image: url('{{ restaurant.get('image_url') }} ');" ></div>
+            <p>{{ restaurant.get('display_address') }}</p>
+            <p>Search location: {{city}}</p>
+            <p>Search term: {{search_term or 'None Specified'}}</p>
+        </section>
+
         <h2>Top Restaurant:</h2> 
         <p>Name: {{ restaurant.get('name') }}</p>
     </main>

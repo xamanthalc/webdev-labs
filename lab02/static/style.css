@@ -27,6 +27,13 @@ main {
     margin: 3vh;
 }
 
+section {
+    margin: 10 px;
+    border: solid 1px #CCC;
+    padding-bottom: 20px;
+    width: calc(25% - 20px);
+}
+
 
 @media only screen and (max-width: 1000px) {
     /* Media queries go here */
